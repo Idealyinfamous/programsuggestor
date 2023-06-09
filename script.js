@@ -11,23 +11,19 @@
 // likeEggsButton.addEventListener("click", likeEggs);
 // ~The above code is a function to change the header tag ( which is a p tag) into
 //~ different title changes
-const myQuestion = [
-  {
-    questionOne: "",
-  },
-];
-function generateQuiz(
-  questions,
-  quizContainer,
-  resultsContainer,
-  submitButton
-) {
-  function showQuestions(questions, quizContainer) {
-    //
+
+// const python = ["extrovert", "salty", "anywhere","hedgehog"];
+// const javascript = ["introvert", "sweet", "firm", "cat"];
+// const golang = ["ambivert", "both", "soft", "dog"];
+
+function resultShown() {
+  resultShown = prompt("what language did you like?");
+  let h3 = document.querySelector("h3");
+  if (resultShown >= 5) {
+    h3.innerHTML = " YAY PYTHON!";
+  } else {
+    h3.innerHTML = " YAY GO!";
   }
-  function showResults(questions, quizContainer, resultsContainer) {}
-  showQuestions(questions, quizContainer);
-  submitButton.onclick = function () {
-    showResults(questions, quizContainer, resultsContainer);
-  };
 }
+let resultShownButton = document.querySelector("button");
+resultShown.addEventlistener("click", resultShown);
