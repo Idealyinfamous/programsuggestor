@@ -9,6 +9,7 @@
 // }
 // let likeEggsButton = document.querySelector("button");
 // likeEggsButton.addEventListener("click", likeEggs);
+
 // ~The above code is a function to change the header tag ( which is a p tag) into
 //~ different title changes
 
@@ -16,14 +17,21 @@
 // const javascript = ["introvert", "sweet", "firm", "cat"];
 // const golang = ["ambivert", "both", "soft", "dog"];
 
-function resultShown() {
-  resultShown = prompt("what language did you like?");
-  let h3 = document.querySelector("h3");
-  if (resultShown >= 5) {
-    h3.innerHTML = " YAY PYTHON!";
-  } else {
-    h3.innerHTML = " YAY GO!";
-  }
+//using one question from your html page, create a javascript function that
+//will display ONE programming language at the bottom of the page after I click
+//submit
+
+//querySelector() method to access the matched element.
+
+document.getElementById("extrovert").onclick = function () {
+  let selected = document.querySelector(
+    "input[type=radio] [name=personality]:checked"
+  );
+  alert(selected.value);
+};
+//below possible way to display in bottom of page
+function questionOne() {
+  let questionOne = document.getElementById("extrovert");
+  let display = document.querySelector("h3");
 }
-let resultShownButton = document.querySelector("button");
-resultShown.addEventlistener("click", resultShown);
+result.addEventListener("click", questionOne);
