@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="scripts.js"></script>
     <title>Programming Language Suggester</title>
   </head>
   <body>
@@ -16,140 +17,39 @@
     </section>
     <form>
       <!--This is question one-->
-      <fieldset>
-        <img src="?" />
-        <legend class="personality">What personality fits you best?</legend>
-        <ul>
-          <li>
-            <label>Extrovert</label>
-            <input
-              type="radio"
-              id="extrovert"
-              name="personality"
-              value="extrovert"
-              checked
-            />
-          </li>
-          <li>
-            <label>Introvert</label>
-            <input
-              type="radio"
-              id="introvert"
-              name="personality"
-              value="introvert"
-            />
-          </li>
-          <li>
-            <label>Ambivert</label>
-            <input
-              type="radio"
-              id="ambivert"
-              name="personality"
-              value="ambivert"
-            />
-          </li>
-        </ul>
-      </fieldset>
+      <img src="?" />
+      <legend class="personality">What personality fits you best?</legend>
+      <input type="radio" name="personality" id="introvert" value="introvert">Introvert<br>
+      <input type="radio" name="personality" id="extrovert" value="extrovert">Extrovert<br>
+      <input type="radio" name="personality" id="ambivert" value="ambivert">Ambivert<br>
       <!--This is question two-->
-      <fieldset>
-        <img src="?" />
-        <legend class="taste">
-          What kind of foods do you gravitate to most?
-        </legend>
-        <ul>
-          <li>
-            <label>Sweet</label>
-            <input type="radio" id="sweet" name="taste" value="sweet" checked />
-          </li>
-          <li>
-            <label>Salty</label>
-            <input type="radio" id="salty" name="taste" value="salty" />
-          </li>
-          <li>
-            <label>Both together!</label>
-            <input type="radio" id="both" name="taste" value="both" />
-          </li>
-        </ul>
-      </fieldset>
+      <img src="?" />
+      <legend class="taste">
+        What kind of foods do you gravitate to most?
+      </legend>
+      <input type="radio" id="sweet" name="taste" value="sweet">Sweet<br>
+      <input type="radio" id="salty" name="taste" value="salty">Salty<br>
+      <input type="radio" id="both" name="taste" value="both">Both<br>
       <!--This is question three-->
-      <fieldset>
-        <img src="?" />
-        <legend class="sleep">What kind of bed do you like to sleep on?</legend>
-        <ul>
-          <li>
-            <label>Firm bed</label>
-            <input type="radio" id="firm" name="sleep" value="firm" checked />
-          </li>
-          <li>
-            <label>I can sleep anywhere</label>
-            <input type="radio" id="anywhere" name="sleep" value="anywhere" />
-          </li>
-          <li>
-            <label f>Soft bed</label>
-            <input type="radio" id="soft" name="sleep" value="soft" />
-          </li>
-        </ul>
-      </fieldset>
+      <img src="?" />
+      <legend class="sleep">What kind of bed do you like to sleep on?</legend>
+      <input type="radio" id="firm" name="sleep" value="firm">Firm<br>
+      <input type="radio" id="anywhere" name="sleep" value="anywhere">Anywhere<br>
+      <input type="radio" id="soft" name="sleep" value="soft">Soft<br>
       <!--This is question four-->
-      <fieldset>
-        <img src="?" />
-        <legend class="pet">What pet would you choose to own?</legend>
-        <ul>
-          <li>
-            <label>Dog</label>
-            <input type="radio" id="dog" name="pet" value="dog" checked />
-          </li>
-          <li>
-            <label>Cat</label>
-            <input type="radio" id="cat" name="pet" value="cat" />
-          </li>
-          <li>
-            <label>Hedgehog</label>
-            <input type="radio" id="hedgehog" name="pet" value="hedgehog" />
-          </li>
-        </ul>
-      </fieldset>
+      <img src="?">
+      <legend class="pet">What pet would you choose to own?</legend>
+      <input type="radio" id="dog" name="pet" value="dog">Dog<br>
+      <input type="radio" id="cat" name="pet" value="cat">Cat<br>
+      <input type="radio" id="hedgehog" name="pet" value="hedgehog">Hedgehog<br>
       <!--This is question five-->
-      <fieldset>
-        <img src="?" />
-        <legend class="trip">Where would you like to vacation?</legend>
-        <ul>
-          <li>
-            <label>Exotic Island Getaway!</label>
-            <input
-              type="radio"
-              id="island"
-              name="trip"
-              value="island"
-              checked
-            />
-          </li>
-          <li>
-            <label>Somewhere with alot of history</label>
-            <input type="radio" id="history" name="trip" value="history" />
-          </li>
-          <li>
-            <label>Cruise</label>
-            <input type="radio" id="cruise" name="trip" value="cruise" />
-          </li>
-        </ul>
-      </fieldset>
-      <h3>Result change</h3>
-      <!--Result should appear here when selection is completeted
-      <section class="Golang">
-        <img src="?" />
-        <h1>Go, Also known as Golang</h1>
-      </section>
-      <section class="Python">
-        <img src="?" />
-        <h1>Python</h1>
-      </section>
-      <section class="javascript">
-        <img src="?" />
-        <h1>Javascript</h1>
-      </section>-->
-      <!--Result should appear above when selection is completed-->
-      <button type="button" class="result">Make my Match</button>
+      <img src="?">
+      <legend class="trip">Where would you like to vacation?</legend>
+      <input type="radio" id="island" name="trip" value="island">Tropical Island<br>
+      <input type="radio" id="history" name="trip" value="history">History Tour<br>
+      <input type="radio" id="cruise" name="trip" value="cruise">Cruise<br>
+
+      <button type="button" onclick="checkButton()">Make my Match</button>
     </form>
   </body>
 </html>
