@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js"></script>
+    <title>Programming Language Suggester</title>
+  </head>
+  <body>
+    <section>
+      <h1>What Programming should I learn?</h1>
+      <p>
+        Want to know how know to code but don't know what Language you should
+        learn?<em>Well your in luck!</em> Just answer the questions below and
+        you will be matched with your perfect language to get started!
+      </p>
+    </section>
+    <form>
+      <!--This is question one-->
+      <img src="?" />
+      <legend class="personality">What personality fits you best?</legend>
+      <input type="radio" name="personality" id="introvert" value="introvert">Introvert<br>
+      <input type="radio" name="personality" id="extrovert" value="extrovert">Extrovert<br>
+      <input type="radio" name="personality" id="ambivert" value="ambivert">Ambivert<br>
+      <!--This is question two-->
+      <img src="?" />
+      <legend class="taste">
+        What kind of foods do you gravitate to most?
+      </legend>
+      <input type="radio" id="sweet" name="taste" value="sweet">Sweet<br>
+      <input type="radio" id="salty" name="taste" value="salty">Salty<br>
+      <input type="radio" id="both" name="taste" value="both">Both<br>
+      <!--This is question three-->
+      <img src="?" />
+      <legend class="sleep">What kind of bed do you like to sleep on?</legend>
+      <input type="radio" id="firm" name="sleep" value="firm">Firm<br>
+      <input type="radio" id="anywhere" name="sleep" value="anywhere">Anywhere<br>
+      <input type="radio" id="soft" name="sleep" value="soft">Soft<br>
+      <!--This is question four-->
+      <img src="?">
+      <legend class="pet">What pet would you choose to own?</legend>
+      <input type="radio" id="dog" name="pet" value="dog">Dog<br>
+      <input type="radio" id="cat" name="pet" value="cat">Cat<br>
+      <input type="radio" id="hedgehog" name="pet" value="hedgehog">Hedgehog<br>
+      <!--This is question five-->
+      <img src="?">
+      <legend class="trip">Where would you like to vacation?</legend>
+      <input type="radio" id="island" name="trip" value="island">Tropical Island<br>
+      <input type="radio" id="history" name="trip" value="history">History Tour<br>
+      <input type="radio" id="cruise" name="trip" value="cruise">Cruise<br>
+
+      <button type="button" onclick="checkButton()">Make my Match</button>
+      <h3 id="disp" sytle="color:black"></h3>
+    </form>
+  </body>
+</html>
